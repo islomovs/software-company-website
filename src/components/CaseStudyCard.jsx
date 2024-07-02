@@ -1,5 +1,5 @@
 import React from "react";
-import LinearButton from "./buttons/LinearButton";
+import LinearButton from "./LinearButton";
 
 export default function CaseStudyCard({ img, bgColor }) {
   return (

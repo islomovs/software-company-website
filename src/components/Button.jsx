@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex } from "antd";
 
-import arrow from "../../assets/arrow.png";
+import arrow from "../assets/arrow.png";
 
 export default function Button({ text }) {
   return (

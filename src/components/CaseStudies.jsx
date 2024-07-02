@@ -2,7 +2,7 @@ import React from "react";
 
 import SectionBreaker from "./SectionBreaker";
 import CaseStudyCard from "./CaseStudyCard";
-import LinearButton from "./buttons/LinearButton";
+import LinearButton from "./LinearButton";
 import TopHeader from "./TopHeader";
 
 import case_study_1 from "../assets/case_study_1.png";

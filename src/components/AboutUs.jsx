@@ -1,18 +1,15 @@
 import React from "react";
-import VideoPlayer from "./VideoPlayer";
+import { Flex } from "antd";
 
 import SectionBreaker from "./SectionBreaker";
-import Button from "./buttons/Button";
+import Button from "./Button";
 
-import arrow from "../assets/arrow.png";
+import aboutus from "../assets/aboutus.png";
 
-const handleLeftClick = () => {
-  alert("Left button clicked!");
-};
-export default function Section2() {
+export default function AboutUs() {
   return (
     <>
-      <section className="flex flex-row px-[105px] py-[180px]">
+      <Flex className="px-[105px] py-[180px]" gap={90}>
         <div className="w-[535px]">
           <SectionBreaker />
           <h1 className="text-[35px]">
@@ -31,8 +28,8 @@ export default function Section2() {
           </p>
           <Button text="See more Informations" />
         </div>
-        <VideoPlayer />
-      </section>
+        <img className="max-w-[501px]" src={aboutus} alt="about us" />
+      </Flex>
     </>
   );
 }

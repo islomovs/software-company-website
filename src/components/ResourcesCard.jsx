@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex } from "antd";
 
-import Button from "./buttons/Button";
+import Button from "./Button";
 
 export default function ResourcesCard({ image }) {
   return (

@@ -2,18 +2,17 @@ import React, { useState, useRef } from "react";
 import { Flex } from "antd";
 
 import ServiceSliderCard from "./ServiceSliderCard";
+import Ellipse from "./Ellipse";
 
 import code from "../assets/code.png";
 import dashboard from "../assets/dashboard.png";
 import mobile_app from "../assets/mobile_app.png";
 
-import Ellipse from "./Ellipse";
-import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
+import { Pagination } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/pagination";
 
 SwiperCore.use([Pagination]);
 
@@ -80,13 +79,12 @@ export default function Services() {
           ref={swiperRef}
           slidesPerView={3}
           centeredSlides
-          centeredSlidesBounds
           pagination={{
             el: ".swiper-pagination",
             clickable: true,
             bulletActiveClass: "custom-bullet-active",
             renderBullet: function (index, className) {
-              return `<span class="${className} custom-bullet"> </span>`;
+              return `<span class="${className} custom-bullet rounded-full"> </span>`;
             },
           }}
         >

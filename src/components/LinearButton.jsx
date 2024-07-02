@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../assets/arrow_2.png";
+import arrow from "../assets/arrow_2.png";
 
 export default function LinearButton({
   text,

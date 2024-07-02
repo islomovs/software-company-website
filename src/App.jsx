@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import Services from "./components/Services.jsx";
 import Ellipse from "./components/Ellipse.jsx";
-import Section2 from "./components/Section2.jsx";
+import Section2 from "./components/AboutUs.jsx";
 import Companies from "./components/Companies.jsx";
+import Reviews from "./components/Reviews.jsx";
 import CaseStudies from "./components/CaseStudies.jsx";
 import GreatSoftware from "./components/GreatSoftware.jsx";
 import DevelopmentApproach from "./components/DevelopmentApproach.jsx";
@@ -22,6 +23,7 @@ export default function App() {
       <Ellipse />
       <Section2 />
       <Companies />
+      <Reviews />
       <CaseStudies />
       <GreatSoftware />
       <DevelopmentApproach />

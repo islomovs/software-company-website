@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 
 import SectionBreaker from "./SectionBreaker";
 import Ellipse from "./Ellipse";
+import NavigationButton from "./NavigationButton";
 
 import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";
@@ -11,10 +12,11 @@ import logo4 from "../assets/logo4.png";
 import logo5 from "../assets/logo5.png";
 import logo6 from "../assets/logo6.png";
 import logo7 from "../assets/logo7.png";
+import whiteArrow from "../assets/white-arrow.png";
 
 export default function Companies() {
   return (
-    <section className="px-[105px]">
+    <section className="px-[105px] relative">
       <SectionBreaker />
       <h1 className="text-[35px]">
         Meet the People
@@ -39,6 +41,18 @@ export default function Companies() {
           <img className="mx-[27px]" src={logo7} alt="logo" />
         </Marquee>
       </div>
+      <NavigationButton
+        positionx="right-[81px]"
+        positiony="top-[130px]"
+        fillColor="primary-default"
+        arrowImg={whiteArrow}
+      />
+      <NavigationButton
+        fillColor="bg-primary-default"
+        positionx="right-[148px]"
+        positiony="top-[130px]"
+        rotation="180"
+      />
     </section>
   );
 }
