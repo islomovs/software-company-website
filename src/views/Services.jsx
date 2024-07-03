@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { Flex } from "antd";
 
-import ServiceSliderCard from "./ServiceSliderCard";
-import Ellipse from "./Ellipse";
+import ServiceSliderCard from "../components/ServiceSliderCard";
+import Ellipse from "../components/Ellipse";
 
 import code from "../assets/code.png";
 import dashboard from "../assets/dashboard.png";

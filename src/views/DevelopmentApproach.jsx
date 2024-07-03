@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Flex } from "antd";
 
-import TopHeader from "./TopHeader";
-import DevApproachCard from "./DevApproachCard";
+import TopHeader from "../components/TopHeader";
+import DevApproachCard from "../components/DevApproachCard";
 
 import rocket from "../assets/rocket.png";
 import code from "../assets/code.png";

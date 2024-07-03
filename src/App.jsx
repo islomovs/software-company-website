@@ -1,18 +1,17 @@
-import Navbar from "./components/Navbar.jsx";
-import HeroSection from "./components/HeroSection.jsx";
-import Services from "./components/Services.jsx";
-import Ellipse from "./components/Ellipse.jsx";
-import Section2 from "./components/AboutUs.jsx";
-import Companies from "./components/Companies.jsx";
-import Reviews from "./components/Reviews.jsx";
-import CaseStudies from "./components/CaseStudies.jsx";
-import GreatSoftware from "./components/GreatSoftware.jsx";
-import DevelopmentApproach from "./components/DevelopmentApproach.jsx";
-import TechStack from "./components/TechStack.jsx";
-import Alcaline from "./components/Alcaline.jsx";
-import FeaturedResources from "./components/FeaturedResources.jsx";
-import AdContainer from "./components/AdContainer.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./views/Navbar.jsx";
+import HeroSection from "./views/HeroSection.jsx";
+import Services from "./views/Services.jsx";
+import AboutUs from "./views/AboutUs.jsx";
+import Companies from "./views/Companies.jsx";
+import Reviews from "./views/Reviews.jsx";
+import CaseStudies from "./views/CaseStudies.jsx";
+import GreatSoftware from "./views/GreatSoftware.jsx";
+import DevelopmentApproach from "./views/DevelopmentApproach.jsx";
+import TechStack from "./views/TechStack.jsx";
+import Alcaline from "./views/Alcaline.jsx";
+import FeaturedResources from "./views/FeaturedResources.jsx";
+import AdContainer from "./views/AdContainer.jsx";
+import Footer from "./views/Footer.jsx";
 
 export default function App() {
   return (
@@ -20,8 +19,7 @@ export default function App() {
       <Navbar />
       <HeroSection />
       <Services />
-      <Ellipse />
-      <Section2 />
+      <AboutUs />
       <Companies />
       <Reviews />
       <CaseStudies />

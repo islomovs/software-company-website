@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import { Flex } from "antd";
 
-import TopHeader from "./TopHeader";
-import ReviewCard from "./ReviewCard";
-import NavigationButton from "./NavigationButton";
-import PaginationCard from "./PaginationCard";
+import TopHeader from "../components/TopHeader";
+import ReviewCard from "../components/ReviewCard";
+import NavigationButton from "../components/NavigationButton";
+import PaginationCard from "../components/PaginationCard";
 
 import profile1 from "../assets/Profile1.png";
 import profile2 from "../assets/Profile2.png";

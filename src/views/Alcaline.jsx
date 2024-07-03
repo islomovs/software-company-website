@@ -1,9 +1,9 @@
 import React from "react";
 import { Flex } from "antd";
 
-import TopHeader from "./TopHeader";
-import AlcalineCard from "./AlcalineCard";
-import TimeLine from "./TimeLine";
+import TopHeader from "../components/TopHeader";
+import AlcalineCard from "../components/AlcalineCard";
+import TimeLine from "../components/TimeLine";
 
 import trophy from "../assets/trophy.png";
 

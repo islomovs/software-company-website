@@ -1,9 +1,9 @@
 import React from "react";
 
-import SectionBreaker from "./SectionBreaker";
-import CaseStudyCard from "./CaseStudyCard";
-import LinearButton from "./LinearButton";
-import TopHeader from "./TopHeader";
+import SectionBreaker from "../components/SectionBreaker";
+import CaseStudyCard from "../components/CaseStudyCard";
+import LinearButton from "../components/LinearButton";
+import TopHeader from "../components/TopHeader";
 
 import case_study_1 from "../assets/case_study_1.png";
 import case_study_2 from "../assets/case_study_2.png";

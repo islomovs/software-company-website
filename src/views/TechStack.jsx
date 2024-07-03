@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Flex, Col, Row } from "antd";
 
-import TopHeader from "./TopHeader";
-import TechTitles from "./TechTitles";
+import TopHeader from "../components/TopHeader";
+import TechTitles from "../components/TechTitles";
 
 import nodejs from "../assets/NodeJS.png";
 import php from "../assets/PHP.png";
@@ -102,6 +102,7 @@ export default function TechStack() {
       <Swiper
         slidesPerView={1}
         loop
+        allowTouchMove={false}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -113,11 +114,11 @@ export default function TechStack() {
           <SwiperSlide key={card.id} className="mt-[72px]">
             <Row
               justify="center"
-              gutter={60}
+              gutter={[60, 30]}
               className="transition-all duration-300"
             >
               {techImages.map((techObj, i) => (
-                <Col key={i}>
+                <Col span={4} key={i}>
                   <img
                     key={i}
                     src={techObj.imgUrl}

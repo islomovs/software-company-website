@@ -1,9 +1,9 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-import SectionBreaker from "./SectionBreaker";
-import Ellipse from "./Ellipse";
-import NavigationButton from "./NavigationButton";
+import SectionBreaker from "../components/SectionBreaker";
+import Ellipse from "../components/Ellipse";
+import NavigationButton from "../components/NavigationButton";
 
 import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";

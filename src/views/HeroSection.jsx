@@ -1,5 +1,6 @@
 import React from "react";
-import main_img from "../assets/main.png";
+
+import mainimg from "../assets/main.png";
 
 export default function () {
   return (
@@ -28,7 +29,7 @@ export default function () {
           Let’s get started!
         </button>
       </div>
-      <img className="w-[614px] h-[546px]" src={main_img} alt="main image" />
+      <img className="w-[614px] h-[546px]" src={mainimg} alt="main image" />
     </section>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-import TopHeader from "./TopHeader";
-import ResourcesCard from "./ResourcesCard";
+import TopHeader from "../components/TopHeader";
+import ResourcesCard from "../components/ResourcesCard";
 
 import fresource from "../assets/f-resource.png";
 import fresource2 from "../assets/f-resource2.png";

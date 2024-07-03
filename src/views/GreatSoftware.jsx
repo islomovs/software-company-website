@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col } from "antd";
 
-import TopHeader from "./TopHeader";
-import CardInfo from "./CardInfo";
-import Ellipse from "./Ellipse";
+import TopHeader from "../components/TopHeader";
+import CardInfo from "../components/CardInfo";
+import Ellipse from "../components/Ellipse";
 
 import profile_pic from "../assets/profile_pic.png";
 import profile_pic_2 from "../assets/profile_pic_2.png";

@@ -1,10 +1,11 @@
 import React from "react";
-import { Flex } from "antd";
+import { Flex, Button } from "antd";
 
-import SectionBreaker from "./SectionBreaker";
-import Button from "./Button";
+import SectionBreaker from "../components/SectionBreaker";
 
+import arrow from "../assets/arrow.png";
 import aboutus from "../assets/aboutus.png";
+import playcircle from "../assets/play-circle.png";
 
 export default function AboutUs() {
   return (
@@ -18,7 +19,7 @@ export default function AboutUs() {
           </h1>
           <p className="mt-[30px] text-[18px] font-normal text-[#718096] mb-[50px]">
             We{" "}
-            <span className="bg-gradient-to-bl from-[#F76680] to-[#57007B] text-transparent bg-clip-text">
+            <span className="bg-gradient-to-bl from-primary-dark to-primary-default text-transparent bg-clip-text">
               add development capacity
             </span>{" "}
             to tech teams. Our value isn’t limited to building teams but is
@@ -26,9 +27,23 @@ export default function AboutUs() {
             software development company that guarantees the successful delivery
             of your project.
           </p>
-          <Button text="See more Informations" />
+          <Button
+            icon={<img className="w-6 h-6" src={arrow} />}
+            type="text"
+            iconPosition="end"
+            className="text-primary-default font-medium text-[16px]"
+          >
+            See more Informations
+          </Button>
         </div>
-        <img className="max-w-[501px]" src={aboutus} alt="about us" />
+        <div className="relative w-[501px]">
+          <img className="max-w-[501px]" src={aboutus} alt="about us" />
+          <img
+            className="absolute inset-0 m-auto h-[78px] w-[78px] cursor-pointer"
+            src={playcircle}
+            alt="play"
+          />
+        </div>
       </Flex>
     </>
   );
