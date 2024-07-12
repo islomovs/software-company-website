@@ -10,9 +10,6 @@ html {
   html {
     @apply font-inter;
   }
-  .center-items {
-    @apply flex flex-row items-center;
-  }
   .custom-bullet {
     @apply cursor-pointer mx-[4px] bg-transparent border-[1px] border-gray-400 w-[13px] h-[13px] opacity-100 transition duration-300 ease-in-out;
   }

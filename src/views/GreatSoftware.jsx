@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
+import { Element } from "react-scroll";
 
 import TopHeader from "../components/TopHeader";
 import CardInfo from "../components/CardInfo";
@@ -14,7 +15,7 @@ import great_soft_3 from "../assets/great_soft_3.png";
 
 export default function GreatSoftware() {
   return (
-    <section className="px-[105px] py-20">
+    <Element name="blog" className="px-[105px] py-20">
       <TopHeader title="Way of building" subtitle="Great Software" />
       <Row gutter={[98, 95]}>
         <Col span={12}>
@@ -80,6 +81,6 @@ export default function GreatSoftware() {
           <img className="relative z-10" src={great_soft_3} alt="great soft" />
         </Col>
       </Row>
-    </section>
+    </Element>
   );
 }

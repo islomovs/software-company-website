@@ -1,9 +1,10 @@
 import React from "react";
 import { Flex } from "antd";
+import { Element } from "react-scroll";
 
 export default function AdContainer() {
   return (
-    <section className="px-[105px] py-[50px]">
+    <Element name="hire" className="px-[105px] py-[50px]">
       <Flex
         align="center"
         justify="space-between"
@@ -24,6 +25,6 @@ export default function AdContainer() {
           </Flex>
         </Flex>
       </Flex>
-    </section>
+    </Element>
   );
 }

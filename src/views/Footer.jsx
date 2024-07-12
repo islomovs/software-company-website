@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-scroll";
 import { Flex, FloatButton } from "antd";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -35,18 +36,40 @@ export default function Footer() {
           <Flex vertical className="w-[140px]">
             <h1 className="font-bold text-gray-700 text-[18px]">Links</h1>
             <ul className="mt-6">
-              <li className={`text-nowrap leading-9 ${textStyle}`}>About Us</li>
-              <li className={`text-nowrap leading-9 ${textStyle}`}>Services</li>
               <li className={`text-nowrap leading-9 ${textStyle}`}>
-                Case Studies
+                <Link to="about-us" smooth={true} duration={1000}>
+                  About Us
+                </Link>
               </li>
               <li className={`text-nowrap leading-9 ${textStyle}`}>
-                How it works
+                <Link to="services" smooth={true} duration={1000}>
+                  Services
+                </Link>
               </li>
-              <li className={`text-nowrap leading-9 ${textStyle}`}>Blog</li>
-              <li className={`text-nowrap leading-9 ${textStyle}`}>Careers</li>
               <li className={`text-nowrap leading-9 ${textStyle}`}>
-                Areas We Serve
+                <Link to="case-studies" smooth={true} duration={1000}>
+                  Case Studies
+                </Link>
+              </li>
+              <li className={`text-nowrap leading-9 ${textStyle}`}>
+                <Link to="dev-approach" smooth={true} duration={1000}>
+                  How it Works
+                </Link>
+              </li>
+              <li className={`text-nowrap leading-9 ${textStyle}`}>
+                <Link to="blog" smooth={true} duration={1000}>
+                  Blog
+                </Link>
+              </li>
+              <li className={`text-nowrap leading-9 ${textStyle}`}>
+                <Link to="tech-stack" smooth={true} duration={1000}>
+                  Careers
+                </Link>
+              </li>
+              <li className={`text-nowrap leading-9 ${textStyle}`}>
+                <Link to="dev-approach" smooth={true} duration={1000}>
+                  Areas We Serve
+                </Link>
               </li>
             </ul>
           </Flex>

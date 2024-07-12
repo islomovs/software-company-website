@@ -1,10 +1,11 @@
 import React from "react";
 
 import mainimg from "../assets/main.png";
+import { Element } from "react-scroll";
 
-export default function () {
+export default function HeroSection() {
   return (
-    <section className="flex flex-row align-middle px-28 py-16">
+    <Element name="about-us" className="flex flex-row align-middle px-28 py-16">
       <div className="flex flex-col justify-center">
         <h1 className="text-[45px] font-light">
           Great
@@ -29,7 +30,7 @@ export default function () {
           Let’s get started!
         </button>
       </div>
-      <img className="w-[614px] h-[546px]" src={mainimg} alt="main image" />
-    </section>
+      <img className="w-[600px] h-[546px]" src={mainimg} alt="main image" />
+    </Element>
   );
 }

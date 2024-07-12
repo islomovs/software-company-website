@@ -1,5 +1,6 @@
 import React from "react";
-import { Row, Col, Flex } from "antd";
+import { Row, Col } from "antd";
+import { Element } from "react-scroll";
 
 import TopHeader from "../components/TopHeader";
 import DevApproachCard from "../components/DevApproachCard";
@@ -13,7 +14,10 @@ import padlock from "../assets/padlock.png";
 
 export default function DevelopmentApproach() {
   return (
-    <section className="px-[105px] py-20 bg-[#F7F7FA] border-y-[1px] border-y-primary-lite">
+    <Element
+      name="dev-approach"
+      className="px-[105px] py-20 bg-[#F7F7FA] border-y-[1px] border-y-primary-lite"
+    >
       <TopHeader title="Our design and" subtitle="development approach" />
       <Row gutter={[16, 40]}>
         <Col span={12}>
@@ -125,6 +129,6 @@ export default function DevelopmentApproach() {
           />
         </Col>
       </Row>
-    </section>
+    </Element>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Flex } from "antd";
+import { Element } from "react-scroll";
 
 import ServiceSliderCard from "../components/ServiceSliderCard";
 import Ellipse from "../components/Ellipse";
@@ -52,7 +53,7 @@ export default function Services() {
   }
 
   return (
-    <div className="relative">
+    <Element name="services" className="relative">
       <Ellipse
         diameter="72px"
         from_color="#F76680"
@@ -99,6 +100,6 @@ export default function Services() {
           ></Flex>
         </Swiper>
       </div>
-    </div>
+    </Element>
   );
 }

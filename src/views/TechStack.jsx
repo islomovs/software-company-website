@@ -17,6 +17,7 @@ import mongo from "../assets/mongo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import { Element } from "react-scroll";
 
 export default function TechStack() {
   const swiperRef = useRef(null);
@@ -79,7 +80,10 @@ export default function TechStack() {
   }, [currentIndex, titleRefs.current]);
 
   return (
-    <section className="py-20 px-[188px] border-b-[1px] border-primary-lite">
+    <Element
+      name="tech-stack"
+      className="py-20 px-[188px] border-b-[1px] border-primary-lite"
+    >
       <TopHeader title="Our" subtitle="Tech Stack" />
       <Flex justify="center" gap={10}>
         {titles.map((title, i) => (
@@ -131,6 +135,6 @@ export default function TechStack() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </Element>
   );
 }
